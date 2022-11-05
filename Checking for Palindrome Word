@@ -1,0 +1,14 @@
+check_kata=[]
+
+kata = input('Masukkan Kata yang Ingin di-Cek: ')
+for x in kata:
+    check_kata.append(x)
+    y = (check_kata)
+
+z = y.copy()
+y.reverse()
+
+if z == y:
+  print(kata, 'adalah kata palindrom')
+else :
+  print(kata, 'bukan kata palindrom')
