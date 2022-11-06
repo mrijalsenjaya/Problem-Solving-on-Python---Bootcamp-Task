@@ -1,13 +1,19 @@
+# Membuat list kosong untuk menampung data input
 check_kata=[]
 
+# Membuat formula input data
 kata = input('Masukkan Kata yang Ingin di-Cek: ')
+
+# Memasukkan data input ke dalam list check_kata
 for x in kata:
     check_kata.append(x)
     y = (check_kata)
 
+# Menduplikasi list dan membalikkan urutan list
 z = y.copy()
 y.reverse()
 
+# Menentukan fungsi dan kondisi untuk output
 if z == y:
   print(kata, 'adalah kata palindrom')
 else :
